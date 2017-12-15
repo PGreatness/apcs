@@ -1,0 +1,9 @@
+public abstract class Weapons {
+    protected weapName;
+    protected weapVal;
+    public Weapons() {
+	weapName = "Sword of Azaroth";
+	weapVal = 0.5;
+    }
+    public abstract about();
+}

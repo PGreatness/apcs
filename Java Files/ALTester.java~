@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+public class ALTester {
+    public static void main ( String[] args ) {
+	ArrayList<Integer> foo = new ArrayList<Integer>(); //I couldn't do it
+	//without making it integers, probably because of the inputs?
+	foo.add(1); //test cases
+	foo.add(3);//  |
+	foo.add(4);//  |
+	foo.add(7);//  |
+	foo.add(0);//  |
+	foo.add(11);// |
+	foo.add(8);//  |
+	foo.add(4);//  |
+	foo.add(2);//  |
+	foo.add(32);// |
+	foo.add(23);// |
+	foo.add(13);// |
+	foo.add(5);//  V
+	for (int i = foo.size(); i > 0; i--) {//iteratively go through the array
+	    for(int j = 0; j < i; j++) {// compares i against every other items
+		//in the list
+		if (foo.get(i - 1).compareTo(foo.get(j)) == -1) { //if the value
+		    //of i - 1 (because it starts at 0) is less...
+		    int atI = foo.get(i - 1); //make a storage called atI that
+		    //stores the value of foo at (i - 1)
+		    foo.set(i - 1, foo.get(j)); //set the value at the location
+		    //as the item at index of j
+		    foo.set(j, atI); //basically swaps them 
+		}
+	    }
+	}
+	System.out.println(foo.size()); //check the size
+	System.out.println(foo); //print foo to check if sorted
+	//prints : 13
+	//[0, 1, 2, 3, 4, 4, 5, 7, 8, 11, 13, 23, 32]
+
+    }//end main()
+}//end ALTester()
