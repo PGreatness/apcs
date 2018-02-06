@@ -1,7 +1,0 @@
-public class Greet {
-    public static void main( String[] args) {
-	System.out.println ("Hello World!");
-    }
-}
-
-/*As opposed to most other programming languages that I know so far, Java seems to be more complex. Python is simple with some definition, a line of code, and then calling the code again. The same goes for Scheme but for Java, you have to state a class, that it's public. Basically, a lot of stuff to make sure the exact thing that you want to happen happens.*/
