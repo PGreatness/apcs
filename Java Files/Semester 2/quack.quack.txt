@@ -1,0 +1,39 @@
+I never thought it would come to that.
+
+It was simple. I was stuck. Thrown into the endless loop of confusion that periodically plagues even the best of students.
+This wasn't the way it was supposed to be. It was a simple job: get in, code, get out.
+It never was.
+
+It started off as any normal afternoon. Everyone in the group had visions on what the project was to be. One thought this
+while another thought that and eventually, we got to the point where it was "thit", a mix & mash of the two ideas to 
+promote the peace. Imbeded in the plans were inklings of AIs, various types to solve different types of problems. It was
+never intended to be a large enough intelligence that it would dominate the world, nor a small enough to lose Connect 4
+with a young child. Somewhere in the middle, "thit" lived. And that is where I hoped it would remain. 
+
+Once we finally got the meat of the project done, the concern turned to the AIs. Unbenownst to us, the AI had manifested
+itself into groups of different tribes, based solely on their programming and complexity. The Easy AI lived the simplest,
+still working off the land and making small huts to live in in groups of 3 to 4. They hadn't discovered animal husbandry
+yet and by the looks of it, they probably wouldn't. Birds chirped near the tribe and rabbits would actively come forth,
+unfazed by the size of the beings but drawn in to the compassion emenating from them. For the rest of the animal kingdom,
+life had found a way to coexist with this tribe.
+
+The Medium AIs were a bit more bothersome, known for enslaving all those who came to their dominion, whether it be to use
+the bathroom, or ask for directions. The very plants would not grow, scared of the life they had to live, and the animals
+knew well to stay away. They looked down upon the Easy AIs as backwards, savage, and flawed, as these vile beings rounded
+up all the Easy AIs near them to ship them away to Robertesque, a mining facility where AIs go to die.
+
+As they walked, the very grounds ruptured and spit acid, the lava spilling forth, calm in comparison to the heat fuming
+from the feet of the Hard AIs. Their tribe developed tools beyond the brightest minds of the Medium, beyond the imaginations
+of the Easys, and put this all to use to wage war on both. A deadly stuggle to the top left the cities in ruins, poisonous
+gas, the likes of which could drop the mightest of warriors, billowed through their homes, refreshing their airs through
+the ventilations. They were beasts which none could master. And it was my task to do so.
+
+The situation was dire and hopeless. How could I tame what could not be tamed, topple towers made of un-toppable materials,
+sink the most unsinkable ships? I laid my head down and thought, then picked it back up, traced a solution, scrapped it, and
+thought again. Over and over and over again, I did so, hoping for an end to my insanity, for a way out. 
+"Get yourself together!"
+Who was that? I picked my head up, unsure of how to proceed.
+"You have to used a flowchart," said the voice again. 
+I looked around and saw none other than Waddles, straddled in the armor of the gods, riding the Pegasus of Dreams! He looked
+at me right in the eyes and reached out, his hand beckoning me towards the light. As he strode off, I ran to catch up, tripped
+and woke up. Right then, I made a flowchart and I managed to get a good early prototype for the Hard AI done.

@@ -1,0 +1,75 @@
+public class Commifier {
+    /*   public String commafyR(int num) {
+	 String NewStr = num;
+	 String number = NewStr;
+	 if (NewStr.length() == 3) {
+	 return number;
+	 }
+    */
+    public static String commafyF(int num) {
+	String numHolder = "" + num;
+	String another = "";
+	String orig ="" + num;
+	for (int x = numHolder.length(); x > 0; x -= 1) {
+	    if ((numHolder.length() != 0) && (numHolder.length() % 3 == 0)
+		&& (numHolder.length() != orig.length())) {
+		
+		another += "," + numHolder.substring(0, 1);
+		numHolder = numHolder.substring(1, numHolder.length());
+		
+	    }else{
+		another += numHolder.substring(0, 1);
+		numHolder = numHolder.substring(1, numHolder.length());
+	    }
+	}
+	return another;
+    }
+    //DOES NOT WORK
+    /*    public static String commafyR(int num) {
+	String orig ="" + num;
+	String numStr = "" + num; //turns to string;
+	if (numStr.length() <= 3) { //base case
+	    String holder = "" + num;
+	    return holder;
+	}
+	if ((numStr.length() != orig.length()) && (numStr.length() % 3 == 0)) {
+	    String holder;
+	    holder += "," + numStr.substring(0, 1);
+	    int counter;
+	    counter += 1;
+	    commafyR(Integer.parseInt(numStr.substring(1, numStr.length())));
+	}else{
+	    String holder;
+	    holder += numStr.substring(0, 1);
+	    int counter;
+	    counter += 1;
+	    commafyR(Integer.parseInt(numStr.substring(1, numStr.length())));
+	}
+	return holder;
+    }
+    */
+    //DOES NOT WORK
+    //recursion was harder than expected. the strings do not concatenate
+    //the recursive call always seems to return the very first num instead of
+    //the list of the num. 
+    public static void main(String[] args) {
+	for(String s: args) {
+	    String nums = "";
+	    String orig = s;
+	    for(int x = s.length(); x > 0; x -= 1) {
+		if ((s.length() != 0) && (s.length() % 3 == 0) &&
+		    (s.length() != orig.length())) {
+		    
+		    nums += "," + s.substring(0, 1);
+		    s = s.substring(1, s.length());
+		    
+		}else{
+		    nums += s.substring(0, 1);
+		    s = s.substring(1, s.length());
+		}
+	    }
+	    System.out.println(nums);
+	} 
+	//    System.out.println(commafyF(123123));
+    }
+}

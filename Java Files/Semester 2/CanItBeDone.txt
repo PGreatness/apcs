@@ -1,0 +1,12 @@
+Macaroni (Roster: Aidan Griffin, Colin Hosking, and Ahnaf Hasan)
+APCS2 pd08
+HW02 -- Speaking in Pseudocode
+2018-1-31
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A method to make an O(n) algorithm which can search through a 2D array effectively
+is to start at the bottom left corner and move right if the array number is larger
+than the desired number. If the array number is smaller than the desired number, 
+move up the array and repeat what was mentioned previously. If the array contains
+the desired number, return 1, else return 0, signifying that the array is void of
+that particular number.

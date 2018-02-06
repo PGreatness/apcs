@@ -1,0 +1,52 @@
+Alvin Ye, Zane Wang, Ahnaf Hasan
+
+Neon Unicorns
+
+APCS1 
+pd1
+
+HW68 -- PPMP
+2018-01-12
+
+
+1) (C)
+   After doing the math 8 times, the number 2 repeats
+
+
+2) (B)
+
+   array after a[1] is changed: {1,1,4,1,3}
+
+
+3) (D)
+
+   since nums = {2,1,2}, x is equal to 2, and y is equal to 1 so it will print 2 is equal to 1
+
+
+4) (E)
+
+   Arraylist's add at index will increase the size() continuously and it will be an infinite loop
+
+
+5) (B)
+
+   methodB() has no implementation, so it needs to be implemented 
+
+
+6) (B)
+
+   since ClassA() and InterfaceB() have no relation
+
+
+7) (A)
+
+   a class car has 3 attributes that should be inside the class
+
+
+8) (A)
+
+   compareTo() returns an int and takes an Object
+
+
+
+This is as far as we got in class

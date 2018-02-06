@@ -1,0 +1,88 @@
+//Team Bob(Ahnaf Hasan,Zane Wang,Jerry Ye)
+// APCS1 pd01
+// HW12 -- May ah Hahv S'maur, Please?
+// 2017-10-05
+
+public class Stats{
+    
+    public static int mean(int a, int b){//returns the floor of the mean of
+	//	a and b 
+	return (int)(a + b) / 2;//solves for mean by adding both and dividing
+    }
+    
+    public static double mean(double a, double b){
+	return (a + b) / 2.0;// no conversion to double needed as
+	//resulting data type can only be an error
+    }
+    
+    public static int max(int a, int b){
+	if (a > b){//checks if a is greater than b 
+	    return a;//return will always be an integer
+	}
+	else{
+	    return b;
+	}
+    }//no (int) required because a and b will always be ints
+    
+    public static double max(double a,double b){
+        if (a > b){
+            return a;
+	}
+        else{
+            return b;
+	}
+    }
+    
+    public static int max(int a, int b, int c) {
+	if (a > b) { //is a greater than b? if so...
+	    if (a > c) { //check if a is also greater than c. if so...
+		return a; //a is the mightest of them all
+	    }else{
+		return c;//c is actually the mightest of them all
+	    }
+	}else{
+	    if (b > c){ //so if a is less than b, is b greater than c ??
+		return b; //b is the mightest of all
+	    }else{
+		return c; //c is after all the mightest of them all
+	    }
+	}
+    }
+
+    //same comments as previous
+    public static double max(double a, double b, double c) {
+		if (a > b) {
+	    if (a > c) {
+		return a;
+	    }else{
+		return c;
+	    }
+	}else{
+	    if (b > c){
+		return b;
+	    }else{
+		return c;
+	    }
+	}
+    }
+    
+    public static int geoMean(int a, int b, int c) {
+	return (int)Math.pow(a * b * c, 0.333333); //Math.pow gives a^b as
+	    //(a, b). since fractions don't seem to work, 0.33333333.
+	    }
+
+    //same comments as above
+    public static double geoMean(double a, double b, double c) {
+	return Math.pow(a * b * c, 0.3333333);
+	    }
+    
+    public static int geoMean(int a, int b){//returns the geometric
+	//mean of a and b and returns the floor of that value
+	return (int)Math.sqrt(a * b);
+	//Must convert into integer 
+    }
+    
+    public static double geoMean(double a,double b){
+	return Math.sqrt(a * b);//uses math.sqrt to find geometric mean
+    }
+}

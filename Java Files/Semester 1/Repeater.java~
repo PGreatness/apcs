@@ -1,0 +1,24 @@
+public class Repeater 
+{
+    public static void fenceR(int numPosts) 
+    {
+	if (numPosts == 0) {
+	    System.out.println("");
+	}else{
+	    if (numPosts == 1) {
+		System.out.println("|");
+	    }else{
+		System.out.println("|--");
+		fenceR(numPosts - 1);
+	    }
+	}
+    }
+    publuc static void main(String [] args) 
+    {
+	fenceR(0);
+	fenceR(1);
+	fenceR(2);
+	fenceR(3);
+    }
+
+}

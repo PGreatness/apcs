@@ -1,0 +1,99 @@
+//Ahnaf Hasan
+//APCS pd01
+//HW38 -- Put It Together
+//2017-11-21
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Firstly, the 2D array, known as arr in the
+code, is made. Then, ints d1,d2,d3, and d4
+are all initialized as 0. Display() method
+prints out the array with tabs and newlines.
+Then, the user is prompted to enter the 
+coordinates of the words they would like 
+moved around( not starting with 0). It then
+displays an array made by copying the array
+into a new array, called arr2, and switches
+the Strings around. If any of the coordinates
+are larger than the array itself, an error is
+printed.
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+import cs1.Keyboard; //import to use Keyboard.java
+
+public class Swapper {
+    public static String[][] arr = { //the master array
+	{"word", "help", "none"},
+	{"man", "life", "get"},
+	{"kick", "jump", "run"},
+	{"hunt", "food", "like"}
+    };
+    //Displays the array
+    public static void display (String[][] arr) {
+	int x = 0; //x counter
+	int y = 0; //y counter
+	for ( String s[] : arr) {
+	    for ( String str : s) { //how to access every element in
+		//an array
+		if (arr[0].length - 1 != y) { //if the y counter is not the same
+		    //as the last slot number
+		    System.out.print(arr[x][y] + "\t"); //same line print
+		}else{
+		    System.out.println(arr[x++][y]); //new line print
+		}
+		if (y == arr[0].length - 1) { //reseting y counter
+		    y = 0;
+		}else{
+		    y++;
+		}
+	    }
+	}
+    }
+    //Changes the array to reflect changes made by user
+    public static void change(int x1, int y1, int x2, int y2) {
+	int x = 0; //x counter
+	int y = 0; //y counter
+	String [][] arr2 = new String [arr.length][arr[0].length]; //new array
+	//made to be copied from arr, making arr more flexible
+	for (String s[] : arr) {
+	    for (String j : s) { //accessing every element in arr
+		arr2[x][y] = arr[x][y]; //copy arr into arr2
+		y++; //increase y counter
+		y %= arr[0].length; //y stays within the range of the arr
+		x++; //increase x counter
+		x %= arr.length; //x stays within the range of the arr
+	    }
+	}
+	if (x1 > arr.length || x2 > arr.length || 
+	    y1 > arr[0].length || y2 > arr[0].length) {//if any of the user's
+	    //inputs are out of bounds
+	    System.out.println("Error. Out of Bounds Input(s)");
+	}else{
+	    arr2[x1 - 1][y1 - 1] = arr[x2 - 1][y2 - 1]; //swap the first with
+	    //the second
+	    arr2[x2 - 1][y2 - 1] = arr[x1 - 1][y1 - 1]; //the effect of the
+	    //previously mentioned swap
+	    display(arr2); //display the new array
+	}
+
+    }
+    public static void main (String [] args) {
+	System.out.println("For users not used to \"Start with 0\" form of thinking: \n");
+	int d1 = 0;
+	int d2 = 0;
+	int d3 = 0;
+	int d4 = 0;
+	display(arr); //displays arr
+	try {
+	    System.out.println("First Selection X-COR: ");
+	    d1 = Keyboard.readInt();
+	    System.out.println("First Selection Y-COR: ");
+	    d2 = Keyboard.readInt();
+	    System.out.println("Second Selection X-COR: ");
+	    d3 = Keyboard.readInt();
+	    System.out.println("Second Selection Y-COR: ");
+	    d4 = Keyboard.readInt();
+	}
+	catch ( Exception e )
+	    { }
+	change(d1, d2, d3, d4); //displays arr2
+    }
+}
