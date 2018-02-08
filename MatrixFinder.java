@@ -94,7 +94,7 @@ public class MatrixFinder {
 	double Stime = System.currentTimeMillis();
 	System.out.println("Start Time: " + Stime);
 	
-	for (int i = 0; i < (2 * arr.length) - 2; i++) { //counter
+	for (int i = 0; i < (2 * arr.length)-1; i++) { //counter
 	    
 	    if (arr[row][col] == number) {
 		System.out.println("Time taken: " + (System.currentTimeMillis() - Stime));
@@ -137,47 +137,71 @@ public class MatrixFinder {
 	return "(-1, -1)";
     
     }//end finder(int)
-    
+
+    public void pop() {
+	int count = 0;
+	int len = this.arr.length;
+	
+	for (int row = 0; row < len; row++) {
+	    count = row;
+	    for (int col = 0; col < len; col++) {
+		this.arr[row][col] = count;
+		count++;
+	    }
+	}
+	
+	for (int i = 0; i < len; i++){
+	    this.arr[i][len-1] = count;
+	    count++;
+	}
+	
+    }//end pop(int)	
+		
     
 
     public static void main (String[] args) {
 	
 	int choice = 1;
-	
-	MatrixFinder pop = new MatrixFinder(200);
-	
-	for (int a = 0; a < pop.arr.length; a++) {
-	    
-	    for (int w = 0; w < pop.arr[0].length; w++) {
-		
-		if (w == 0) {
-		    
-		    pop.arr[a][w] = a;
-		
-		}else{
-		    
-		    pop.arr[a][w] = (a + 2*w);
-		
+
+	int numChoice = 200;
+
+	MatrixFinder nArr = new MatrixFinder(200);
+
+	for (int i = 0; i < 100; i++ ) {
+
+	    try {
+		System.out.print("Array Size: ");
+		numChoice = Keyboard.readInt();
+
+		while (numChoice < 0) {
+
+		    System.out.println("Enter Valid Num\n");
+
 		}
+
+		nArr = new MatrixFinder(numChoice);
+
+	    }
+
+	    catch (Exception e) { }
+
+	    nArr.pop();
+	
+	    System.out.println(nArr);
+	
+	    try {
 	    
+		System.out.println("What number? ");
+	    
+		choice = Keyboard.readInt();
+	
 	    }
 	
+	    catch (Exception e) { }
+	
+	    System.out.println(nArr.finder(choice));
+
 	}
-        
-	System.out.println(pop);
-	
-	try {
-	    
-	    System.out.println("What number? ");
-	    
-	    choice = Keyboard.readInt();
-	
-	}
-	
-	catch (Exception e) { }
-	
-	System.out.println(pop.finder(choice));
-    
     }//end main()
 
 }//end MatrixFinder
