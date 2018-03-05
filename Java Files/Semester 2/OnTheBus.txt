@@ -1,0 +1,13 @@
+//Ahnaf Hasan
+//APCS2 pd08
+//HW11 -- Get On the Bus
+//2018-02-28
+
+This isn't fleshed out as much but I realized that if you start at the corner,
+there are only 2 other places where you can go. However, if you start from the
+center or literally anywhere else, there can be a minimum of 3 moves and a max
+of 8 moves. Therefore, that means that if you start at the center, you may run of
+space to go. However, if you start at the corner, there aren't that many places
+to go so you wouldn't lose much. If you go to the corner, there's a 50% chance
+that you picked the right beginning, whereas for the center, you have a 1/8 or 
+12.5% of picking the right first move.

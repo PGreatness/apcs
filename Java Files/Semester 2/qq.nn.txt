@@ -1,0 +1,19 @@
+//Ahnaf Hasan
+//APCS2 pd08
+//HW09 -- Yaaasss Queens
+//2018-02-26
+
+In the case of a 2x2 board, it isn't possible as occupying any space by one queen
+immediately renders the other spaces unavailable to a queen. In the case of a 3x3
+board, two queens can be placed before a conflict arises on the last queen since 
+the only available space would definitely threaten an existing queen. For the case
+of a 4x4 board, a solution can be found since queens can be placed at 1 from the
+top on the leftmost column, the bottom of the 2nd column, the very top of the 3rd,
+and 3rd from the top in the last column. For a 5x5 board, the same pattern from
+the 4x4 can be made and then putting the final queen on the very bottom of the
+5th column. A 6x6 is harder and it took me a longer time to do but it is possible.
+The first queen is 2 from the top at the first column, the 2nd is 2 below that on
+the next column, and the 3rd is 2 below that on the 3rd column. 4th is on the very
+top of the 4th column, 5th is 2 below the one in the 4th column but in the 5th
+column, and the final queen is 2 below the 5th but in the 5th column. I haven't
+been able to find it out for the 7 or 8 and it may not exist.
