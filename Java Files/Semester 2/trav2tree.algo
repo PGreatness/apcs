@@ -1,0 +1,14 @@
+//Ahnaf Hasan
+//APCS2 pd08
+//HW41 -- A Tree Grows in 251
+//2018-04-28
+
+The traversals have be from the same tree. They also have to be the correct type of traversal (e.g don't say a traversal is pre-order when it is actually post).
+This will allow a tree to form as an identical copy.
+If given pre-order and in-order:
+0. Check if you are given traversals. If yes, continue, else, complain.
+1. Set the first element of the pre-order traversal as the root.
+2. Look for the element in the in-order list. Everything to the left is in a left subtree, and everything to the right is in a right subtree.
+3. Look at the next element in the pre-order traversal.
+4. Repeat Steps 0-4 with subtrees.
+5. Marvel.

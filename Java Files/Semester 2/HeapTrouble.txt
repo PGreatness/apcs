@@ -1,0 +1,8 @@
+//Ahnaf Hasan
+//APCS2 pd08
+//HW48 -- Heap 'o Trouble
+//2018-05-13
+
+In order to add to a heap, u add it at the index 2 times the parent node plus 1. 
+To remove, if it's a leaf, set that index as null. If it has children, set it as 
+null and put the largest of the immediate children at that index. 

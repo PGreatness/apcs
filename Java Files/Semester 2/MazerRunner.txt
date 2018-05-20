@@ -1,0 +1,23 @@
+//Ahnaf Hasan
+//APCS2 pd08
+//HW14 -- 
+//2018-03-05
+
+A1: An open tour may be found but a closed tour may not always be found. That is
+because a path can be made that goes to every square as shown by the simulations,
+but to return to the original spot adds a burden that may not be able to done.
+
+A2: See answer above.
+
+A3: As n increases, so does the amount of squares. This seemingly obvious statement
+shows that at worst, 8 computations must be made for each of the squares, and 
+backtracking may increase it even more.
+
+A4: An optimization might be to store the locations that are valid for a move in
+a seperate array to check for possible solutions.
+
+The algorithm is pretty similar to the knight's tour problem where any and all 
+intersections are checked first. If it leads to an exit, travel down the path
+else try the other route. If this doesn't work, backtrack and go to the other 
+paths. This was, since we know for certain that there is a solution, we can go
+through at most every possiblity and end with a solved path.
