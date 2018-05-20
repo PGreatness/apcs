@@ -49,7 +49,7 @@ public class ALHeapMax {
                 break;
             }
         }
-    }
+    } //o(n)
     public Integer removeMax() {
         if (maxHeap.size() == 0) {
             return null;
@@ -57,6 +57,7 @@ public class ALHeapMax {
         Integer retVal = peekMax();
         Integer tmp = maxHeap.get(maxHeap.size() - 1);
         swap(0, maxHeap.size() - 1);
+        maxHeap.remove(maxHeap.size() - 1);
         int pos = 0;
         int maxChildPos;
         while (pos < maxHeap.size()) {
