@@ -15,7 +15,7 @@ public class Heapsort {
         System.out.println(heap);
         ArrayList<Integer> retArr = new ArrayList<Integer>();
         while (heap.peekMax() != null) {
-           // System.out.println("The current max is: " + heap.peekMax());
+            // System.out.println("The current max is: " + heap.peekMax());
             retArr.add(heap.removeMax());
             //System.out.println("The next max is: " + heap.peekMax());
         }
@@ -34,13 +34,13 @@ public class Heapsort {
         al.add(5);
         al.add(12);
         al.add(3);
-        /*while (sc.hasNext()) {
+        while (sc.hasNext()) {
             try {
                 al.add(sc.nextInt());
             }catch(Exception e) {
                 System.err.println("Error is: " + e);
             }
-        }*/
+        }
         System.out.println(hs.sort(al));
     }
 }
