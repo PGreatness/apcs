@@ -1,2 +1,0 @@
-# closet
-here be skeletons
